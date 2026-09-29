@@ -5,7 +5,7 @@ Hex stickers for CRAN packages, downloaded automatically and standardised.
 | Path | Contents |
 |------|----------|
 | `raw/` | Logos as downloaded (4,024 PNGs, 802 SVGs), with `manifest.csv` |
-| `hexstickers/` | 3,627 hexes: transparent 518×600 PNGs, matching SVGs, `report.csv` |
+| `hexstickers/` | 3,624 hexes: transparent 518×600 PNGs, matching SVGs, `report.csv` |
 
 ## Requirements
 
@@ -37,6 +37,7 @@ are kept, resized and trimmed to a clean hex edge.
 - Squashed hexes are stretched, and artwork past the hex edge is cut off.
 - Hexes on gradient or boxed backgrounds are missed. See `not_hex` rows in
   `report.csv`, sorted by `iou`.
-- A few octagons get through.
+- A few octagons pass the hex test. Known ones are listed in `EXCLUDE` in the
+  script.
 
 Logos belong to their packages' authors. Check the licence before reusing one.

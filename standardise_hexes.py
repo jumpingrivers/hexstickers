@@ -41,6 +41,8 @@ LOOSE_IOU = 0.85          # accepted if the proportions are close to a true hex
 LOOSE_RATIO = 1.10, 1.21
 BG_TOLERANCE = 40         # RGB distance from the corner colour
 SUPERSAMPLE = 4
+# Shapes that pass the hex test but aren't hexes, checked by eye
+EXCLUDE = {"dataspice": "octagon", "flexlsx": "octagon", "morestopwords": "octagon"}
 
 
 def hex_mask(w, h, flat=False, supersample=SUPERSAMPLE):
@@ -117,6 +119,9 @@ def standardise(img, bbox, flat):
 
 def process(path, optipng=True):
     pkg = path.stem
+    if pkg in EXCLUDE:
+        return dict(package=pkg, status="excluded", orientation="",
+                    ratio="", iou="", note=EXCLUDE[pkg])
     try:
         img = Image.open(path)
         img.load()
@@ -156,6 +161,11 @@ def main():
         rows = pool.starmap(process, [(p, optipng) for p in paths])
 
     report = OUT / "report.csv"
+    if args and report.exists():
+        # Partial run: update these packages' rows and keep everyone else's
+        done = {r["package"] for r in rows}
+        with report.open(newline="") as f:
+            rows += [r for r in csv.DictReader(f) if r["package"] not in done]
     with report.open("w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["package", "status", "orientation", "ratio", "iou", "note"])
         writer.writeheader()
