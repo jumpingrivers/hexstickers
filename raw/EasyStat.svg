@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.4 209.3" width="181.4" height="209.3">
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3A6B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2E5FA3;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E84C4C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F4A261;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#00000055"/>
+    </filter>
+  </defs>
+
+  <!-- Hexagon body -->
+  <polygon
+    points="90.7,4 177.4,52.3 177.4,157 90.7,205.3 4,157 4,52.3"
+    fill="url(#hexGrad)"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    filter="url(#shadow)"/>
+
+  <!-- Inner hex ring decoration -->
+  <polygon
+    points="90.7,14 167.4,57.8 167.4,151.2 90.7,195 14,151.2 14,57.8"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="1"
+    stroke-opacity="0.15"/>
+
+  <!-- Scatter plot dots (data visualization motif) -->
+  <!-- Trend line -->
+  <line x1="42" y1="128" x2="142" y2="72" stroke="url(#accentGrad)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" opacity="0.9"/>
+
+  <!-- Data points -->
+  <circle cx="48"  cy="130" r="5.5" fill="#F4A261" opacity="0.95"/>
+  <circle cx="62"  cy="118" r="5.5" fill="#F4A261" opacity="0.95"/>
+  <circle cx="74"  cy="110" r="5.5" fill="#4CC9A4" opacity="0.95"/>
+  <circle cx="88"  cy="100" r="6.5" fill="#FFFFFF"  opacity="1"/>
+  <circle cx="100" cy="93"  r="5.5" fill="#4CC9A4" opacity="0.95"/>
+  <circle cx="113" cy="86"  r="5.5" fill="#F4A261" opacity="0.95"/>
+  <circle cx="126" cy="78"  r="5.5" fill="#E84C4C" opacity="0.95"/>
+  <circle cx="138" cy="70"  r="5.5" fill="#E84C4C" opacity="0.95"/>
+
+  <!-- Axis lines (subtle) -->
+  <line x1="38" y1="65" x2="38" y2="140" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.4"/>
+  <line x1="38" y1="140" x2="148" y2="140" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Package name -->
+  <text x="90.7" y="167"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="800"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="1.5">EasyStat</text>
+
+  <!-- Tagline -->
+  <text x="90.7" y="184"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="8.5"
+    font-weight="400"
+    fill="#FFFFFF"
+    fill-opacity="0.75"
+    text-anchor="middle"
+    letter-spacing="0.8">stats · narratives · reports</text>
+</svg>

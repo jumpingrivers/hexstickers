@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A7C8C"/><stop offset="100%" stop-color="#0E2C3D"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="44%" r="72%">
+      <stop offset="0%" stop-color="#1C5468"/><stop offset="100%" stop-color="#0F2E3E"/>
+    </radialGradient>
+  </defs>
+  <polygon points="512.0,80.0 886.1,296.0 886.1,728.0 512.0,944.0 137.9,728.0 137.9,296.0" fill="url(#border)"/>
+  <polygon points="512.0,96.2 872.1,304.1 872.1,719.9 512.0,927.8 151.9,719.9 151.9,304.1" fill="url(#bg)"/>
+  <g opacity="0.17" fill="#F4ECD8">
+    <rect x="430" y="322" width="3" height="150" rx="1.5" opacity="0.6"/>
+    <rect x="591" y="322" width="3" height="150" rx="1.5" opacity="0.6"/>
+    <rect x="292" y="334" width="120" height="20" rx="6"/>
+    <rect x="452" y="334" width="120" height="20" rx="6"/>
+    <rect x="612" y="334" width="120" height="20" rx="6"/>
+    <rect x="292" y="372" width="120" height="20" rx="6"/>
+    <rect x="452" y="372" width="120" height="20" rx="6"/>
+    <rect x="612" y="372" width="120" height="20" rx="6"/>
+    <rect x="292" y="410" width="120" height="20" rx="6"/>
+    <rect x="452" y="410" width="120" height="20" rx="6"/>
+    <rect x="612" y="410" width="120" height="20" rx="6"/>
+    <rect x="292" y="448" width="86" height="20" rx="6"/>
+    <rect x="452" y="448" width="110" height="20" rx="6"/>
+    <rect x="612" y="448" width="72" height="20" rx="6"/>
+  </g>
+  <text x="512" y="622" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="165" font-weight="700" fill="#F4ECD8">lssdoc</text>
+</svg>
+

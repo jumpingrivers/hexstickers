@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1039.23" height="1200" viewBox="0 0 1039.23 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.75" y2="1">
+      <stop offset="0%"   stop-color="#1878A0"/>
+      <stop offset="55%"  stop-color="#0D3B5C"/>
+      <stop offset="100%" stop-color="#081420"/>
+    </linearGradient>
+    <clipPath id="hexClip"><path d="M 519.62 0.00 L 1039.23 300.00 L 1039.23 900.00 L 519.62 1200.00 L 0.00 900.00 L 0.00 300.00 Z"/></clipPath>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="22" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M 519.62 0.00 L 1039.23 300.00 L 1039.23 900.00 L 519.62 1200.00 L 0.00 900.00 L 0.00 300.00 Z" fill="url(#bg)" filter="url(#softShadow)"/>
+
+  <g clip-path="url(#hexClip)">
+    <!-- halo ring, segmented like the category-tile ring in the real plots -->
+    <circle cx="519.6" cy="470.0" r="235.0" fill="none" stroke="#22C3F0"
+            stroke-width="20" stroke-dasharray="70.9 27.6"
+            stroke-linecap="round" opacity="0.95" filter="url(#glow)"/>
+
+    <!-- correlation chords -->
+    <path d="M 519.6 235.0 Q 552.8 456.2 685.8 636.2" fill="none" stroke="#22C3F0" stroke-width="10.0" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 685.8 303.8 Q 505.8 436.8 284.6 470.0" fill="none" stroke="#22C3F0" stroke-width="8.0" stroke-linecap="round" opacity="0.70"/>
+    <path d="M 754.6 470.0 Q 533.4 503.2 353.4 636.2" fill="none" stroke="#F5C518" stroke-width="9.0" stroke-linecap="round" opacity="0.90"/>
+    <path d="M 353.4 303.8 Q 519.6 470.0 685.8 636.2" fill="none" stroke="#22C3F0" stroke-width="7.0" stroke-linecap="round" opacity="0.60"/>
+    <path d="M 685.8 303.8 Q 552.8 483.8 519.6 705.0" fill="none" stroke="#22C3F0" stroke-width="8.0" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 519.6 235.0 Q 486.4 456.2 353.4 636.2" fill="none" stroke="#22C3F0" stroke-width="7.0" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="519.6" y="860" text-anchor="middle"
+        font-family="Avenir Next, Century Gothic, Futura, Helvetica Neue, Arial, sans-serif"
+        font-size="98" font-weight="600" fill="#FFFFFF"
+        letter-spacing="1">circlecorR</text>
+</svg>

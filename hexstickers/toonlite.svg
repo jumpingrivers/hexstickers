@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 232" width="400" height="464">
+  <defs>
+    <!-- Rounded hexagon clip path -->
+    <clipPath id="hex-clip">
+      <path d="
+        M 87,13.5
+        Q 100,6 113,13.5
+        L 182.3,53.5
+        Q 195.3,61 195.3,76
+        L 195.3,156
+        Q 195.3,171 182.3,178.5
+        L 113,218.5
+        Q 100,226 87,218.5
+        L 17.7,178.5
+        Q 4.7,171 4.7,156
+        L 4.7,76
+        Q 4.7,61 17.7,53.5
+        Z
+      "/>
+    </clipPath>
+  </defs>
+
+  <!-- Black border (drawn slightly larger) -->
+  <path d="
+    M 87,13.5
+    Q 100,6 113,13.5
+    L 182.3,53.5
+    Q 195.3,61 195.3,76
+    L 195.3,156
+    Q 195.3,171 182.3,178.5
+    L 113,218.5
+    Q 100,226 87,218.5
+    L 17.7,178.5
+    Q 4.7,171 4.7,156
+    L 4.7,76
+    Q 4.7,61 17.7,53.5
+    Z
+  " fill="#1a1a2e" stroke="#000000" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Slime character, scaled and centered -->
+  <g transform="translate(32, 18) scale(2.1)">
+    <!-- Slime body from rhos packs / fantasy-characters-pro / Slime / green NoOL -->
+    <g>
+      <!-- Main body -->
+      <path d="M59.5,40.09c0,15.19-12.31,18.91-27.5,18.91s-27.5-3.72-27.5-18.91S16.81,12.59,32,12.59s27.5,12.31,27.5,27.5Z" fill="#65d666"/>
+      <!-- Inner darker belly -->
+      <path d="M48.34,41.78c0,9.03-7.32,11.24-16.34,11.24s-16.34-2.21-16.34-11.24,7.32-16.34,16.34-16.34,16.34,7.32,16.34,16.34Z" fill="#39b54a"/>
+      <!-- Light highlight -->
+      <path d="M32,12.59c-12.18,0-22.51,7.92-26.12,18.9,3.32,9.41,12.29,16.16,22.84,16.16,13.38,0,24.22-10.84,24.22-24.22,0-.4-.01-.79-.03-1.18-5.04-5.9-12.54-9.65-20.91-9.65Z" fill="#90e67e"/>
+      <!-- Mid-tone detail -->
+      <path d="M47.93,38.17c-1.65-7.29-8.15-12.73-15.93-12.73-9.03,0-16.34,7.32-16.34,16.34,0,.77,.07,1.47,.17,2.14,3.73,2.35,8.15,3.72,12.89,3.72,7.83,0,14.78-3.71,19.21-9.47Z" fill="#65d666"/>
+      <!-- Shine/reflection -->
+      <path d="M18.51,23.03c1.66,.83,.56,4.32-1.53,8.5s-4.39,7.45-6.05,6.62c-1.66-.83-2.57-5.53-.48-9.7,2.09-4.18,6.4-6.25,8.06-5.42Z" fill="#ffffff"/>
+      <!-- Shadow on bottom -->
+      <path d="M32,56.42c-11.08,0-20.75-2.53-25.94-8.19,3.77,8.44,13.96,10.77,25.94,10.77s22.18-2.32,25.94-10.77c-5.19,5.66-14.86,8.19-25.94,8.19Z" fill="#39b54a"/>
+      <!-- Left eye -->
+      <ellipse cx="32.94" cy="40.21" rx="3.53" ry="5.88" transform="rotate(-2.07 32.94 40.21)" fill="#008751"/>
+      <!-- Right eye -->
+      <ellipse cx="47.43" cy="34.33" rx="3.53" ry="5.88" transform="rotate(-2.07 47.43 34.33)" fill="#008751"/>
+    </g>
+  </g>
+
+  <!-- Package name -->
+  <text x="100" y="175" text-anchor="middle" font-family="'SF Mono', 'Menlo', 'Courier New', monospace" font-weight="bold" font-size="24" fill="#ffffff" letter-spacing="2">toonlite</text>
+</svg>

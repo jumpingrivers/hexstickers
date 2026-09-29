@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 231" width="200" height="231" role="img" aria-labelledby="lexsync-logo-title lexsync-logo-desc">
+  <title id="lexsync-logo-title">lexsync</title>
+  <desc id="lexsync-logo-desc">Hexagon logo: two strands, one violet and one amber, converging into a single line that ends in a solid node, for the R and Python engines selecting one stimulus set.</desc>
+
+  <!-- Meridian family hex: pointy-top, deep-navy ground, per-package accent edge.
+       lexsync's accent is the deep violet #7C4EA3; the edge is its bright step.
+       Ratio 200:231 is the hexb.in sticker proportion (181:209). -->
+  <path d="M100 0 L200 57.75 L200 173.25 L100 231 L0 173.25 L0 57.75 Z" fill="#0E2233"/>
+  <path d="M100 6.4 L194.5 60.9 L194.5 170.1 L100 224.6 L5.5 170.1 L5.5 60.9 Z"
+        fill="none" stroke="#9A6BE0" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- The motif: two strands enter apart and level, bend towards one another and
+       merge into a single line that terminates in one solid node. It states the
+       package's one claim — the R engine and the Python engine select the same
+       stimuli — and it survives the 32px favicon, where the wordmark cannot: at
+       that size the two coloured entries and the single pale exit still read.
+       Strand colours are the two brand accents (violet-light, amber); the merged
+       line and the node take the paper colour, the shared result. -->
+  <g fill="none" stroke-width="11" stroke-linecap="round">
+    <path d="M38 64 C74 64 74 97 112 97" stroke="#C3ADE8"/>
+    <path d="M38 130 C74 130 74 97 112 97" stroke="#E8A33D"/>
+    <path d="M112 97 L152 97" stroke="#FBFAF6"/>
+  </g>
+  <circle cx="152" cy="97" r="13" fill="#FBFAF6"/>
+
+  <!-- Wordmark in the family serif. Spectral is named first for the sites that
+       load it, but the file must also stand alone as a favicon and in a README
+       with no webfont available, so a websafe serif stack follows it. -->
+  <text x="100" y="172" text-anchor="middle"
+        font-family="Spectral, Georgia, 'Times New Roman', serif"
+        font-size="33" font-weight="600" letter-spacing="0.5" fill="#FBFAF6">lexsync</text>
+</svg>

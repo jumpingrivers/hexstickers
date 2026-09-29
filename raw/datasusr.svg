@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 316 372" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="hx7">
+<polygon points="158,0 316,88 316,274 158,362 0,274 0,88"/>
+</clipPath>
+</defs>
+
+<g clip-path="url(#hx7)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+<rect x="0" y="0" width="105.3" height="120.7" fill="#F6C344" style="fill:rgb(246, 195, 68);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="105.3" y="0" width="105.3" height="120.7" fill="#3B7DD8" style="fill:rgb(59, 125, 216);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="210.7" y="0" width="105.3" height="120.7" fill="#E8813A" style="fill:rgb(232, 129, 58);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<rect x="0" y="120.7" width="105.3" height="120.7" fill="#3A8FE0" style="fill:rgb(58, 143, 224);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="105.3" y="120.7" width="105.3" height="120.7" fill="#7B9BE8" style="fill:rgb(123, 155, 232);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="210.7" y="120.7" width="105.3" height="120.7" fill="#3B7DD8" style="fill:rgb(59, 125, 216);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<rect x="0" y="241.3" width="105.3" height="120.7" fill="#D94740" style="fill:rgb(217, 71, 64);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="105.3" y="241.3" width="105.3" height="120.7" fill="#3A8FE0" style="fill:rgb(58, 143, 224);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="210.7" y="241.3" width="105.3" height="120.7" fill="#43A756" style="fill:rgb(67, 167, 86);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<rect x="28" y="150" width="260" height="68" rx="12" fill="rgba(0,0,0,0.3)" style="fill:rgba(0, 0, 0, 0.3);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</g>
+
+<text x="158" y="185" text-anchor="middle" font-family="var(--font-sans)" font-size="36" font-weight="500" letter-spacing="5" fill="#FFFFFF" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:36px;font-weight:500;text-anchor:middle;dominant-baseline:auto">DATASUSR</text>
+<text x="158" y="208" text-anchor="middle" font-family="var(--font-sans)" font-size="9.5" font-weight="400" letter-spacing="2" fill="rgba(255,255,255,0.8)" style="fill:rgba(255, 255, 255, 0.8);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:9.5px;font-weight:400;text-anchor:middle;dominant-baseline:auto">DADOS ABERTOS DO SUS</text>
+
+</svg>

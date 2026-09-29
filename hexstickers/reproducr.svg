@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 209" width="181" height="209">
+  <!-- Hex border -->
+  <polygon points="90.5,2 179,51.75 179,157.25 90.5,207 2,157.25 2,51.75"
+           fill="#0F6E56" stroke="#9FE1CB" stroke-width="4"/>
+
+  <!-- Background hex fill -->
+  <polygon points="90.5,2 179,51.75 179,157.25 90.5,207 2,157.25 2,51.75"
+           fill="#0F6E56"/>
+
+  <!-- Subtle grid lines suggesting code/structure -->
+  <line x1="30" y1="70" x2="151" y2="70" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <line x1="20" y1="90" x2="161" y2="90" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <line x1="16" y1="110" x2="165" y2="110" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <line x1="20" y1="130" x2="161" y2="130" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <line x1="30" y1="150" x2="151" y2="150" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+
+  <!-- Magnifying glass circle -->
+  <circle cx="82" cy="95" r="34" fill="none" stroke="#9FE1CB" stroke-width="7"/>
+
+  <!-- Code lines inside magnifier — suggesting script scanning -->
+  <line x1="62" y1="87" x2="95" y2="87" stroke="#9FE1CB" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <line x1="62" y1="97" x2="88" y2="97" stroke="#9FE1CB" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <line x1="62" y1="107" x2="92" y2="107" stroke="#9FE1CB" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Tick / checkmark overlaid on magnifier bottom-right -->
+  <circle cx="104" cy="118" r="14" fill="#0F6E56" stroke="#9FE1CB" stroke-width="3"/>
+  <polyline points="97,118 101.5,122.5 111,113"
+            fill="none" stroke="#9FE1CB" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Magnifying glass handle -->
+  <line x1="110" y1="122" x2="128" y2="140"
+        stroke="#9FE1CB" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Package name -->
+  <text x="90.5" y="168"
+        font-family="'Courier New', Courier, monospace"
+        font-size="22" font-weight="700"
+        fill="#E1F5EE" text-anchor="middle" letter-spacing="1">reproducr</text>
+</svg>

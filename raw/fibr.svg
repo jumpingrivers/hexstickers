@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAEAF5"/>
+      <stop offset="100%" stop-color="#E8EEFA"/>
+    </linearGradient>
+    <marker id="tip" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#38B8B0"/>
+    </marker>
+  </defs>
+
+  <!-- Hex body -->
+  <polygon points="300,25 533,162 533,438 300,575 67,438 67,162"
+           fill="url(#bg)" stroke="#B888C8" stroke-width="18" stroke-linejoin="round"/>
+  <polygon points="300,44 521,174 521,426 300,556 79,426 79,174"
+           fill="none" stroke="#D8C0E8" stroke-width="3" opacity="0.85"/>
+
+  <!-- 'f' as ∮: shifted 20px up from previous version (circle now cy=370) -->
+  <path d="M 220,275
+           C 232,258 228,240 210,242
+           C 192,244 180,266 178,308
+           C 178,330 177,350 177,370
+           C 176,394 174,426 173,446
+           C 172,460 168,474 160,470"
+        fill="none" stroke="#3C2870" stroke-width="11"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ∮ contour -->
+  <circle cx="177" cy="370" r="34"
+          fill="none" stroke="#3C2870" stroke-width="8.5"/>
+
+  <!-- Fibre vector -->
+  <line x1="201" y1="346" x2="255" y2="291"
+        stroke="#38B8B0" stroke-width="6.5" stroke-linecap="round"
+        marker-end="url(#tip)"/>
+
+  <!-- "ibr": baseline raised to y=420 so mid-height of letters ~y=371, level with circle -->
+  <text x="225" y="420"
+        font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="700" font-size="140" fill="#3C2870"
+        letter-spacing="-2">ibr</text>
+
+  <!-- 80s Memphis corner diamonds -->
+  <polygon points="104,212 115,228 104,244  93,228" fill="#F8C0D4" opacity="0.80"/>
+  <polygon points="496,212 507,228 496,244 485,228" fill="#B8DCF0" opacity="0.80"/>
+  <polygon points="104,374 115,390 104,406  93,390" fill="#B8DCF0" opacity="0.80"/>
+  <polygon points="496,374 507,390 496,406 485,390" fill="#F8C0D4" opacity="0.80"/>
+</svg>

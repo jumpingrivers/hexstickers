@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">drmTMB hex logo</title>
+  <desc id="desc">A dark teal hexagon containing sharp distribution curves for location, scale, and shape models, with the text drmTMB.</desc>
+  <defs>
+    <linearGradient id="hexFill" x1="230" y1="150" x2="970" y2="1050" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#09333a"/>
+      <stop offset="0.55" stop-color="#07343d"/>
+      <stop offset="1" stop-color="#06272f"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="550" y1="785" x2="900" y2="940" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67d8d3"/>
+      <stop offset="1" stop-color="#45c1bd"/>
+    </linearGradient>
+    <clipPath id="hexClip">
+      <path d="M600 44 1058 322v556L600 1156 142 878V322Z"/>
+    </clipPath>
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="10" stdDeviation="1.4" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+
+    <path id="curveTeal" d="M148 601 C206 598 248 575 272 506 C296 438 290 330 303 318 C319 320 318 438 338 505 C360 576 405 597 468 601 Z"/>
+    <path id="curveOrange" d="M218 601 C298 596 349 552 419 532 C493 510 564 535 651 601 Z"/>
+    <path id="curveRed" d="M589 601 C601 552 608 482 638 467 C674 447 710 507 753 552 C794 596 846 604 897 601 Z"/>
+    <path id="curvePurple" d="M658 601 C708 593 721 528 756 482 C786 441 824 466 848 531 C869 586 923 598 982 601 Z"/>
+    <path id="curveBlue" d="M690 601 C760 599 805 554 866 532 C940 506 1000 545 1042 601 Z"/>
+  </defs>
+
+  <path d="M600 44 1058 322v556L600 1156 142 878V322Z" fill="url(#hexFill)" filter="url(#softShadow)"/>
+  <path d="M600 44 1058 322v556L600 1156 142 878V322Z" fill="none" stroke="#f8fbfb" stroke-width="30" stroke-linejoin="round"/>
+  <path d="M600 82 1028 342v516L600 1118 172 858V342Z" fill="none" stroke="#46d6d6" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <g clip-path="url(#hexClip)">
+    <g fill="none" stroke="#4aa0a6" stroke-width="1.2" opacity="0.25">
+      <path d="M128 213 C270 208 357 203 484 211 C642 221 769 201 944 212 C1050 219 1120 222 1192 218"/>
+      <path d="M112 269 C260 260 374 258 500 268 C626 278 768 255 939 264 C1048 270 1121 274 1202 268"/>
+      <path d="M104 329 C250 315 392 320 520 329 C651 339 779 314 946 323 C1055 329 1125 336 1208 326"/>
+      <path d="M108 742 C260 732 382 744 506 760 C622 775 747 752 906 743 C1030 736 1105 742 1206 759"/>
+      <path d="M105 811 C255 823 380 835 515 825 C650 816 750 802 895 819 C1020 834 1110 841 1200 820"/>
+      <path d="M120 880 C260 895 392 884 520 878 C662 871 779 884 928 894 C1043 901 1125 896 1205 884"/>
+    </g>
+
+    <g>
+      <use href="#curveTeal" fill="#54d4cb" opacity="0.88"/>
+      <use href="#curveOrange" fill="#ffbd4a" opacity="0.9"/>
+      <use href="#curveRed" fill="#ff655a" opacity="0.92"/>
+      <use href="#curvePurple" fill="#9b82f5" opacity="0.92"/>
+      <use href="#curveBlue" fill="#4e9df4" opacity="0.9"/>
+    </g>
+
+    <g fill="none" stroke-linejoin="round">
+      <use href="#curveTeal" stroke="#f8fbfb" stroke-width="9"/>
+      <use href="#curveOrange" stroke="#f8fbfb" stroke-width="9"/>
+      <use href="#curveRed" stroke="#f8fbfb" stroke-width="9"/>
+      <use href="#curvePurple" stroke="#f8fbfb" stroke-width="9"/>
+      <use href="#curveBlue" stroke="#f8fbfb" stroke-width="9"/>
+
+      <use href="#curveTeal" stroke="#34ded8" stroke-width="4.2"/>
+      <use href="#curveOrange" stroke="#ffb238" stroke-width="4.2"/>
+      <use href="#curveRed" stroke="#ff5e52" stroke-width="4.2"/>
+      <use href="#curvePurple" stroke="#9885ff" stroke-width="4.2"/>
+      <use href="#curveBlue" stroke="#4b9cff" stroke-width="4.2"/>
+
+      <path d="M150 590 C205 585 246 563 268 502 C291 436 288 353 302 333 C312 350 315 437 334 500 C356 566 404 589 465 590" stroke="#cffffb" stroke-width="2.1"/>
+      <path d="M223 590 C300 584 351 544 420 523 C494 501 563 529 646 590" stroke="#ffdc84" stroke-width="2.1"/>
+      <path d="M594 590 C606 548 612 490 640 477 C675 462 705 515 747 558 C789 597 840 593 887 590" stroke="#ffd3cf" stroke-width="2.1"/>
+      <path d="M666 590 C710 585 725 529 759 491 C787 459 819 478 842 534 C862 581 915 589 970 590" stroke="#ded7ff" stroke-width="2.1"/>
+      <path d="M699 590 C773 588 813 546 872 525 C940 502 996 544 1032 590" stroke="#cfe4ff" stroke-width="2.1"/>
+    </g>
+
+    <path d="M142 604 H1058" stroke="#f8fbfb" stroke-width="11" stroke-linecap="round"/>
+    <path d="M142 606 H1058" stroke="#7aa8ff" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" text-anchor="middle" filter="url(#textShadow)">
+    <text x="600" y="934" fill="#f8fbfb" font-size="124">drm<tspan fill="url(#textGrad)">TMB</tspan></text>
+  </g>
+</svg>

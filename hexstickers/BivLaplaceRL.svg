@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 578" width="500" height="578">
+  <defs>
+    <!-- Main gradient for hex background -->
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b3e;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#122060;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3080;stop-opacity:1" />
+    </linearGradient>
+    <!-- Glow filter for curves -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Clip to hex shape -->
+    <clipPath id="hexClip">
+      <polygon points="250,18 466,143 466,433 250,558 34,433 34,143"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── Hex border (outer ring) ── -->
+  <polygon points="250,10 474,135 474,440 250,566 26,440 26,135"
+           fill="#c8a84b" stroke="none"/>
+
+  <!-- ── Hex body ── -->
+  <polygon points="250,18 466,143 466,433 250,558 34,433 34,143"
+           fill="url(#hexGrad)" stroke="none"/>
+
+  <!-- ── Clipped content group ── -->
+  <g clip-path="url(#hexClip)">
+
+    <!-- Subtle grid lines (light blue, very faint) -->
+    <g stroke="#2a4090" stroke-width="0.6" opacity="0.4">
+      <!-- Horizontal grid -->
+      <line x1="34" y1="200" x2="466" y2="200"/>
+      <line x1="34" y1="260" x2="466" y2="260"/>
+      <line x1="34" y1="320" x2="466" y2="320"/>
+      <line x1="34" y1="380" x2="466" y2="380"/>
+      <line x1="34" y1="440" x2="466" y2="440"/>
+      <!-- Vertical grid -->
+      <line x1="120" y1="100" x2="120" y2="558"/>
+      <line x1="200" y1="100" x2="200" y2="558"/>
+      <line x1="280" y1="100" x2="280" y2="558"/>
+      <line x1="360" y1="100" x2="360" y2="558"/>
+      <line x1="440" y1="100" x2="440" y2="558"/>
+    </g>
+
+    <!-- Coordinate axes -->
+    <g stroke="#4a7adf" stroke-width="1.2" opacity="0.7">
+      <line x1="80" y1="430" x2="450" y2="430"/>
+      <line x1="80" y1="430" x2="80" y2="195"/>
+    </g>
+
+    <!-- ── Bivariate Laplace / survival curve 1 (golden yellow) ── -->
+    <!-- Represents L*(s1,s2) - decaying smoothly -->
+    <path d="M80,250
+             C110,248 130,240 160,225
+             C190,210 210,200 240,192
+             C270,184 295,180 325,178
+             C355,176 385,177 420,179"
+          fill="none" stroke="#f0c040" stroke-width="2.8"
+          stroke-linecap="round" filter="url(#glow)" opacity="0.95"/>
+
+    <!-- ── Residual life curve 2 (cyan) ── -->
+    <!-- Represents mean residual life / MRL function -->
+    <path d="M80,310
+             C110,305 135,295 165,280
+             C200,263 225,250 260,240
+             C295,230 320,228 355,229
+             C385,230 410,233 430,238"
+          fill="none" stroke="#40d8e0" stroke-width="2.5"
+          stroke-linecap="round" filter="url(#glow)" opacity="0.9"/>
+
+    <!-- ── REGF curve 3 (magenta/pink) ── -->
+    <path d="M80,380
+             C115,370 145,355 180,338
+             C215,320 240,308 275,300
+             C308,292 335,290 370,293
+             C400,296 425,302 445,312"
+          fill="none" stroke="#e060b0" stroke-width="2.2"
+          stroke-linecap="round" filter="url(#glow)" opacity="0.85"/>
+
+    <!-- Curve labels (small) -->
+    <text x="432" y="176" fill="#f0c040" font-family="'DejaVu Sans Mono', monospace"
+          font-size="12" opacity="0.9">L*</text>
+    <text x="432" y="235" fill="#40d8e0" font-family="'DejaVu Sans Mono', monospace"
+          font-size="12" opacity="0.9">m(t)</text>
+    <text x="432" y="309" fill="#e060b0" font-family="'DejaVu Sans Mono', monospace"
+          font-size="12" opacity="0.9">I_α</text>
+
+    <!-- ── Small scatter dots (nonparametric estimator feel) ── -->
+    <g fill="#f0c040" opacity="0.55">
+      <circle cx="120" cy="253" r="2.5"/>
+      <circle cx="165" cy="240" r="2.5"/>
+      <circle cx="215" cy="227" r="2.5"/>
+      <circle cx="265" cy="215" r="2.5"/>
+      <circle cx="315" cy="208" r="2.5"/>
+      <circle cx="365" cy="204" r="2.5"/>
+      <circle cx="415" cy="205" r="2.5"/>
+    </g>
+    <g fill="#40d8e0" opacity="0.5">
+      <circle cx="120" cy="312" r="2.5"/>
+      <circle cx="170" cy="296" r="2.5"/>
+      <circle cx="225" cy="276" r="2.5"/>
+      <circle cx="280" cy="262" r="2.5"/>
+      <circle cx="330" cy="254" r="2.5"/>
+      <circle cx="380" cy="253" r="2.5"/>
+      <circle cx="430" cy="259" r="2.5"/>
+    </g>
+
+    <!-- ── Main package title ── -->
+    <text x="250" y="142"
+          font-family="'Georgia', 'Times New Roman', serif"
+          font-size="38" font-weight="700"
+          fill="white" text-anchor="middle"
+          letter-spacing="1">BivLaplace</text>
+
+    <text x="250" y="180"
+          font-family="'Georgia', 'Times New Roman', serif"
+          font-size="26" font-weight="400"
+          fill="#c8a84b" text-anchor="middle"
+          letter-spacing="2">RL</text>
+
+    <!-- Thin decorative separator under title -->
+    <line x1="140" y1="191" x2="360" y2="191"
+          stroke="#c8a84b" stroke-width="1" opacity="0.6"/>
+
+    <!-- ── Bottom subtitle ── -->
+    <text x="250" y="508"
+          font-family="'Georgia', 'Times New Roman', serif"
+          font-size="13.5" font-style="italic"
+          fill="#a0b8e8" text-anchor="middle" opacity="0.9">
+      Bivariate Laplace · Residual Lives
+    </text>
+
+    <!-- ── Math formula at bottom ── -->
+    <text x="250" y="533"
+          font-family="'DejaVu Sans Mono', Consolas, monospace"
+          font-size="12" fill="#c8a84b" text-anchor="middle" opacity="0.75">
+      L*(s₁,s₂) · REGF · Orders
+    </text>
+
+  </g>
+
+  <!-- ── Hex border re-draw on top for crisp edge ── -->
+  <polygon points="250,10 474,135 474,440 250,566 26,440 26,135"
+           fill="none" stroke="#c8a84b" stroke-width="3.5"/>
+  <polygon points="250,18 466,143 466,433 250,558 34,433 34,143"
+           fill="none" stroke="#8a6820" stroke-width="1.2"/>
+
+</svg>

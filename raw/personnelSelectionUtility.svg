@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">personnelSelectionUtility hex logo</title>
+  <desc id="desc">A sober hexagonal R-package style logo with PSU, a normal curve, a selection cutoff, and a shaded utility region.</desc>
+  <defs>
+    <style>
+      .navy { fill: #334c5f; }
+      .line { stroke: #5f798c; stroke-width: 8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: #5f798c; stroke-width: 3; fill: none; stroke-linecap: round; }
+      .dash { stroke: #5f798c; stroke-width: 4; fill: none; stroke-linecap: round; stroke-dasharray: 4 10; }
+      .label { fill: #334c5f; font-family: Georgia, 'Times New Roman', serif; font-style: italic; }
+      .sans { fill: #334c5f; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+    <clipPath id="hexClip">
+      <polygon points="400,20 745,210 745,590 400,780 55,590 55,210" />
+    </clipPath>
+    <clipPath id="tailClip">
+      <rect x="484" y="300" width="220" height="230" />
+    </clipPath>
+  </defs>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <polygon points="400,20 745,210 745,590 400,780 55,590 55,210" fill="#fbfbfa" stroke="#6a8396" stroke-width="26" stroke-linejoin="round"/>
+  <g clip-path="url(#hexClip)">
+    <text x="400" y="257" text-anchor="middle" class="navy" style="font-family: Georgia, 'Times New Roman', serif; font-size: 150px; letter-spacing: 10px;">PSU</text>
+    <path d="M120 530 L685 530" class="line"/>
+    <path d="M120 530 C190 526 230 490 270 425 C317 348 359 310 400 310 C444 310 471 363 493 410 C525 478 575 516 685 530" class="line"/>
+    <path d="M484 530 L484 306" class="line"/>
+    <path d="M390 530 L390 315" class="dash"/>
+    <path d="M484 530 L484 410 C525 478 575 516 685 530 Z" fill="#7f96a8" opacity="0.42" clip-path="url(#tailClip)"/>
+    <path d="M120 530 C190 526 230 490 270 425 C317 348 359 310 400 310 C444 310 471 363 493 410 C525 478 575 516 685 530" class="line"/>
+    <text x="390" y="576" text-anchor="middle" class="label" style="font-size: 40px;">μ</text>
+    <text x="484" y="576" text-anchor="middle" class="label" style="font-size: 40px;">c</text>
+    <text x="672" y="576" text-anchor="middle" class="label" style="font-size: 40px;">x</text>
+    <text x="610" y="404" text-anchor="middle" class="label" style="font-size: 34px;">Utility</text>
+    <path d="M602 418 L556 468" class="thin"/>
+    <path d="M556 468 L563 445 L578 460 Z" fill="#334c5f" opacity="0.9"/>
+    <path d="M125 614 L675 614" class="thin"/>
+    <text x="400" y="675" text-anchor="middle" class="sans" style="font-size: 42px; letter-spacing: 1px;">personnelSelectionUtility</text>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+nohup ./run_all.sh >> raw/run.log 2>&1 &

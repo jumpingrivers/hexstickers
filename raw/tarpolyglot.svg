@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 330" role="img">
+  <title>tarpolyglot</title>
+  <desc>Hex logo: an R node linked to a targets crosshair that branches to py, jl, rs and cpp tokens, under the wordmark tarpolyglot.</desc>
+  <path d="M150 15 L280 90 L280 240 L150 315 L20 240 L20 90 Z" fill="#2E7CD6" stroke="#0d1b2a" stroke-width="12" stroke-linejoin="round"/>
+  <g transform="translate(150 165) scale(0.95) translate(-150 -165)">
+    <text x="150" y="99" text-anchor="middle" textLength="196" lengthAdjust="spacingAndGlyphs" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="34" fill="#0d1b2a">tarpolyglot</text>
+    <g stroke="#0d1b2a" stroke-width="5" stroke-linecap="round">
+      <line x1="72" y1="195" x2="140" y2="195"/>
+      <line x1="140" y1="195" x2="210" y2="136"/>
+      <line x1="140" y1="195" x2="230" y2="173"/>
+      <line x1="140" y1="195" x2="230" y2="217"/>
+      <line x1="140" y1="195" x2="210" y2="254"/>
+    </g>
+
+    <!-- targets crosshair -->
+    <g transform="translate(115 170) scale(0.5)">
+      <circle cx="50" cy="50" r="33" fill="#fff" stroke="#111" stroke-width="6"/>
+      <line x1="50" y1="6" x2="50" y2="94" stroke="#111" stroke-width="5"/>
+      <line x1="6" y1="50" x2="94" y2="50" stroke="#111" stroke-width="5"/>
+      <circle cx="50" cy="50" r="18" fill="none" stroke="#111" stroke-width="5"/>
+      <circle cx="50" cy="50" r="7" fill="#E5342B"/>
+    </g>
+
+    <!-- language nodes: original type-set tokens on dark chips (no third-party logo artwork) -->
+    <g font-family="Consolas,'DejaVu Sans Mono','Courier New',monospace" font-weight="700" text-anchor="middle">
+      <g>
+        <rect x="54" y="179" width="36" height="32" rx="7" fill="#0d1b2a"/>
+        <text x="72" y="199" font-size="17" fill="#e6edf3">R</text>
+        <rect x="61" y="204" width="22" height="3" rx="1.5" fill="#276DC3"/>
+      </g>
+      <g>
+        <rect x="192" y="120" width="36" height="32" rx="7" fill="#0d1b2a"/>
+        <text x="210" y="140" font-size="14" fill="#e6edf3">py</text>
+        <rect x="199" y="145" width="22" height="3" rx="1.5" fill="#3776AB"/>
+      </g>
+      <g>
+        <rect x="212" y="157" width="36" height="32" rx="7" fill="#0d1b2a"/>
+        <text x="230" y="177" font-size="14" fill="#e6edf3">jl</text>
+        <rect x="219" y="182" width="22" height="3" rx="1.5" fill="#9558B2"/>
+      </g>
+      <g>
+        <rect x="212" y="201" width="36" height="32" rx="7" fill="#0d1b2a"/>
+        <text x="230" y="221" font-size="14" fill="#e6edf3">rs</text>
+        <rect x="219" y="226" width="22" height="3" rx="1.5" fill="#C65B1E"/>
+      </g>
+      <g>
+        <rect x="190" y="238" width="40" height="32" rx="7" fill="#0d1b2a"/>
+        <text x="210" y="258" font-size="13.5" fill="#e6edf3">cpp</text>
+        <rect x="197" y="263" width="26" height="3" rx="1.5" fill="#00599C"/>
+      </g>
+    </g>
+  </g>
+</svg>

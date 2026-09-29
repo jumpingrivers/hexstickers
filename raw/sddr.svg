@@ -1,0 +1,54 @@
+<svg viewBox="0 0 201 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="sddr">
+  <defs>
+    <linearGradient id="sddrBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#2a2458"/>
+      <stop offset="1" stop-color="#0b0a1e"/>
+    </linearGradient>
+    <linearGradient id="sddrBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="sddrCurve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="sddrGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+  </defs>
+
+  <!-- hexagon -->
+  <polygon points="100.5,4 196,58.5 196,173.5 100.5,228 5,173.5 5,58.5"
+           fill="url(#sddrBg)" stroke="url(#sddrBorder)" stroke-width="6"
+           stroke-linejoin="round"/>
+
+  <!-- area under the leading distribution -->
+  <path d="M82,162 C107,162 112,76 131,76 C150,76 155,162 180,162 Z"
+        fill="url(#sddrCurve)" opacity="0.14"/>
+
+  <!-- three densities evolving over time -->
+  <path d="M22,162 C44,162 49,112 66,112 C83,112 88,162 110,162"
+        fill="none" stroke="url(#sddrCurve)" stroke-width="3"
+        stroke-linecap="round" opacity="0.40"/>
+  <path d="M51,162 C74,162 79,94 98,94 C117,94 122,162 145,162"
+        fill="none" stroke="url(#sddrCurve)" stroke-width="3.5"
+        stroke-linecap="round" opacity="0.70"/>
+  <path d="M82,162 C107,162 112,76 131,76 C150,76 155,162 180,162"
+        fill="none" stroke="url(#sddrCurve)" stroke-width="4.2"
+        stroke-linecap="round" filter="url(#sddrGlow)" opacity="0.85"/>
+  <path d="M82,162 C107,162 112,76 131,76 C150,76 155,162 180,162"
+        fill="none" stroke="url(#sddrCurve)" stroke-width="4.2"
+        stroke-linecap="round"/>
+
+  <!-- time baseline with arrow -->
+  <line x1="20" y1="162" x2="182" y2="162" stroke="#6b7bb5"
+        stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+  <polygon points="186,162 177,158 177,166" fill="#8ea2e0" opacity="0.9"/>
+
+  <!-- wordmark -->
+  <text x="100.5" y="206" text-anchor="middle"
+        font-family="'DejaVu Sans','Segoe UI',Arial,Helvetica,sans-serif"
+        font-size="43" font-weight="800" letter-spacing="1.5"
+        fill="#eef1ff">sddr</text>
+</svg>

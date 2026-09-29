@@ -1,0 +1,35 @@
+<svg viewBox="0 0 174 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22384f"/>
+      <stop offset="1" stop-color="#101b27"/>
+    </linearGradient>
+    <radialGradient id="ember" cx="0.5" cy="0.38" r="0.72">
+      <stop offset="0" stop-color="#ffce72"/>
+      <stop offset="1" stop-color="#ef9d2c"/>
+    </radialGradient>
+    <marker id="ah" markerWidth="5" markerHeight="5" refX="4.2" refY="2.3" orient="auto">
+      <path d="M0,0 L4.6,2.3 L0,4.6 Z" fill="#7ad0c1"/>
+    </marker>
+  </defs>
+
+  <path d="M87,7 L167,53.5 L167,146.5 L87,193 L7,146.5 L7,53.5 Z"
+        fill="url(#bg)" stroke="#4cc2b0" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M87,15.4 L159.8,57.7 L159.8,142.3 L87,184.6 L14.2,142.3 L14.2,57.7 Z"
+        fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.4" stroke-linejoin="round"/>
+
+  <!-- construct network (shifted down to centre the content) -->
+  <g stroke="#7ad0c1" stroke-width="2.2" fill="none">
+    <line x1="70" y1="65" x2="104" y2="65" marker-end="url(#ah)"/>
+    <line x1="67" y1="74" x2="80"  y2="88" marker-end="url(#ah)"/>
+    <line x1="107" y1="74" x2="94" y2="88" marker-end="url(#ah)"/>
+  </g>
+  <circle cx="61"  cy="65" r="9"  fill="#4cc2b0" stroke="#101b27" stroke-width="2.2"/>
+  <circle cx="113" cy="65" r="9"  fill="#4cc2b0" stroke="#101b27" stroke-width="2.2"/>
+  <circle cx="87"  cy="97" r="10" fill="url(#ember)" stroke="#101b27" stroke-width="2.2"/>
+
+  <!-- wordmark -->
+  <text x="87" y="139" text-anchor="middle"
+        font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="24" font-weight="700" letter-spacing="-0.4"><tspan fill="#f3f6f7">theory</tspan><tspan fill="#f6b24a">forge</tspan></text>
+</svg>

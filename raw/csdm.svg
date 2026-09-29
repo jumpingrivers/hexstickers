@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 800 800"
+     xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="logo-title logo-description">
+  <title id="logo-title">csdm</title>
+  <desc id="logo-description">Logo for the csdm R package for cross-sectional dependence models.</desc>
+
+  <path d="M400 42 706 219v362L400 758 94 581V219Z"
+        fill="#12345B" stroke="#1D527D" stroke-width="10" />
+
+  <text x="400" y="279" fill="#FFFFFF" text-anchor="middle"
+        font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="142" font-weight="700" letter-spacing="-5">csdm</text>
+
+  <g aria-hidden="true">
+    <g fill="none" stroke="#38B6D2" stroke-linecap="round" stroke-width="11" opacity="0.9">
+      <path d="M258 433 333 386" />
+      <path d="M270 465h63" />
+      <path d="M258 497 333 544" />
+    </g>
+
+    <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+      <path d="M333 386 410 365 487 402 568 374" />
+      <path d="M333 465 410 438 487 480 568 451" opacity="0.86" />
+      <path d="M333 544 410 515 487 558 568 526" opacity="0.72" />
+    </g>
+
+    <g fill="#12345B" stroke="#FFFFFF" stroke-width="7">
+      <circle cx="333" cy="386" r="13" />
+      <circle cx="410" cy="365" r="13" />
+      <circle cx="487" cy="402" r="13" />
+      <circle cx="568" cy="374" r="13" />
+      <circle cx="333" cy="465" r="13" />
+      <circle cx="410" cy="438" r="13" />
+      <circle cx="487" cy="480" r="13" />
+      <circle cx="568" cy="451" r="13" />
+      <circle cx="333" cy="544" r="13" />
+      <circle cx="410" cy="515" r="13" />
+      <circle cx="487" cy="558" r="13" />
+      <circle cx="568" cy="526" r="13" />
+    </g>
+
+    <ellipse cx="220" cy="465" rx="65" ry="53"
+             fill="#12345B" stroke="#38B6D2" stroke-width="11" />
+    <text x="220" y="479" fill="#FFFFFF" text-anchor="middle"
+          font-family="Cambria Math, STIX Two Math, Georgia, serif"
+          font-size="61" font-style="italic">
+      f<tspan font-size="29" baseline-shift="sub">t</tspan>
+    </text>
+  </g>
+
+</svg>

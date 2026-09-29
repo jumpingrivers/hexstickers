@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="246.5" height="280" viewBox="1.4 -12 197.2 224"
+     preserveAspectRatio="xMidYMid meet"
+     role="img" aria-label="apifetch">
+  <title>apifetch</title>
+  <defs>
+    <style type="text/css">
+      text { font-family: 'Jost', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <linearGradient id="hex" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22357d"/>
+      <stop offset="1" stop-color="#1a2a65"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hexagon (regular: every edge length 100, uniform 5px stroke) -->
+  <path d="M100,0 L186.6,50 L186.6,150 L100,200 L13.4,150 L13.4,50 Z"
+        fill="url(#hex)" stroke="#139dea" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- fetch arrow (download = retrieve) -->
+  <path d="M90,22 L110,22 L110,62 L126,62 L100,90 L74,62 L90,62 Z"
+        fill="#139dea" stroke="#1a2a65" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- wordmark: textLength locks the width so font substitution can't overflow -->
+  <text x="100" y="112" text-anchor="middle" font-weight="bold"
+        fill="#ececec" font-size="28" textLength="130"
+        lengthAdjust="spacingAndGlyphs" dominant-baseline="central">apifetch</text>
+
+  <!-- chunk swatches (BigDataPE family palette), kept in the full-width band -->
+  <rect x="63.5"  y="130" width="13" height="13" rx="3" fill="#339e39"/>
+  <rect x="83.5"  y="130" width="13" height="13" rx="3" fill="#f8af13"/>
+  <rect x="103.5" y="130" width="13" height="13" rx="3" fill="#d1001e"/>
+  <rect x="123.5" y="130" width="13" height="13" rx="3" fill="#139dea"/>
+</svg>

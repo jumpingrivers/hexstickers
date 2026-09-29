@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">diffcp R package hexsticker logo</title>
+  <desc id="desc">A white hexagonal sticker logo for diffcp, showing a convex cone program geometry and perturbations of data A, b, c.</desc>
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="blueFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#dcecff" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="wordmarkGrad" x1="235" y1="0" x2="965" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001d55"/>
+      <stop offset="0.64" stop-color="#001d55"/>
+      <stop offset="0.65" stop-color="#6733a4"/>
+      <stop offset="1" stop-color="#6733a4"/>
+    </linearGradient>
+    <marker id="arrowPurple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6733a4"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#001d55"/>
+    </marker>
+    <style>
+      .navy{stroke:#001d55;}
+      .blue{stroke:#2f66aa;}
+      .pblue{stroke:#9bb9df;}
+      .purple{stroke:#6733a4;}
+      .thin{stroke-width:4;}
+      .med{stroke-width:6;}
+      .thick{stroke-width:8;}
+      .round{stroke-linecap:round;stroke-linejoin:round;}
+      .label{font-family: Georgia, 'Times New Roman', serif; fill:#001d55; font-size:36px;}
+      .labelPurple{font-family: Georgia, 'Times New Roman', serif; fill:#6733a4; font-size:34px;}
+      .sans{font-family: Avenir, Montserrat, Helvetica, Arial, sans-serif;}
+    </style>
+  </defs>
+
+  <!-- Sticker body -->
+  <polygon points="600,50 1076,325 1076,875 600,1150 124,875 124,325"
+           fill="#ffffff" stroke="#5a5d62" stroke-width="22" stroke-linejoin="round" filter="url(#softShadow)"/>
+
+  <!-- Convex program geometry group: a second-order (Lorentz) cone
+       { (x,y,t) : sqrt(x^2 + y^2) <= t }, apex at the bottom, axis
+       upward.  Cone surface is two straight silhouette lines + the
+       elliptical rim (front arc visible, back arc dashed).  The
+       affine plane slices the cone; their intersection is the small
+       ellipse drawn at z = const.  The navy dot is the optimum of
+       the cone program; the violet dot is the optimum after data
+       perturbation; the dashed violet arc is the derivative
+       direction (dx, dy, ds) that diffcp returns. -->
+  <g transform="translate(0,4)">
+    <!-- back (hidden) rim of cone, dashed -->
+    <path d="M 340 240 A 260 64 0 0 0 860 240" fill="none" class="pblue med round" stroke-dasharray="14 18" opacity="0.9"/>
+
+    <!-- cone body: front silhouette closed by front rim arc -->
+    <path d="M 340 240 A 260 64 0 0 1 860 240 L 600 720 Z"
+          fill="url(#blueFill)" opacity="0.92" class="navy thick round"/>
+
+    <!-- central dashed axis -->
+    <path d="M 600 720 L 600 240" fill="none" class="navy med round" stroke-dasharray="18 18" opacity="0.7"/>
+
+    <!-- affine plane (tilted parallelogram cutting the cone) -->
+    <path d="M 273 582 L 421 460 L 899 460 L 779 582 Z" fill="#eaf3ff" opacity="0.55" class="blue thin round"/>
+    <path d="M 273 582 L 779 582" fill="none" class="blue thin round" opacity="0.75"/>
+    <path d="M 421 460 L 899 460" fill="none" class="blue thin round" opacity="0.75"/>
+
+    <!-- intersection slice: cone ∩ affine plane is itself convex -->
+    <ellipse cx="600" cy="520" rx="118" ry="22" fill="none" class="blue med round" opacity="0.85"/>
+
+    <!-- solution point (on cone-plane intersection) and derivative arrow -->
+    <circle cx="600" cy="542" r="15" fill="#001d55"/>
+    <path d="M 600 542 C 632 482 668 432 700 380" fill="none" class="purple thick round" stroke-dasharray="18 18" marker-end="url(#arrowPurple)"/>
+    <circle cx="700" cy="380" r="17" fill="#6733a4"/>
+
+    <!-- data annotation -->
+    <text x="170" y="374" class="label">data</text>
+    <text x="160" y="422" class="label" font-style="italic">A, b, c</text>
+    <path d="M 268 398 C 308 388 332 396 358 414" fill="none" class="purple med round" marker-end="url(#arrowPurple)"/>
+
+    <!-- perturbed annotation -->
+    <path d="M 762 388 C 802 376 836 372 874 372" fill="none" class="purple med round" stroke-dasharray="32 22" marker-end="url(#arrowPurple)"/>
+    <text x="900" y="380" class="labelPurple">perturbed</text>
+    <text x="914" y="428" class="labelPurple" font-style="italic">A + dA,</text>
+    <text x="914" y="476" class="labelPurple" font-style="italic">b + db,</text>
+    <text x="914" y="524" class="labelPurple" font-style="italic">c + dc</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="600" y="847" text-anchor="middle" class="sans" font-size="155" font-weight="700" letter-spacing="9" fill="url(#wordmarkGrad)">diffcp</text>
+  <line x1="455" y1="907" x2="745" y2="907" stroke="#6733a4" stroke-width="5" stroke-linecap="round"/>
+  <text x="600" y="970" text-anchor="middle" class="sans" font-size="27" font-weight="500" letter-spacing="9" fill="#6733a4">DIFFERENTIABLE CONE</text>
+  <text x="600" y="1015" text-anchor="middle" class="sans" font-size="27" font-weight="500" letter-spacing="9" fill="#6733a4">PROGRAMMING</text>
+</svg>

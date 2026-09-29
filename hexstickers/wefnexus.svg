@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 462" width="400" height="462">
+  <defs>
+    <linearGradient id="hexbg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F8F5"/>
+      <stop offset="40%" style="stop-color:#F0FFF0"/>
+      <stop offset="100%" style="stop-color:#FFF8E7"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#48CAE4;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00B4D8;stop-opacity:0.08"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB703;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#FB8500;stop-opacity:0.05"/>
+    </linearGradient>
+    <clipPath id="hexClip">
+      <polygon points="200,12 388,121 388,341 200,450 12,341 12,121"/>
+    </clipPath>
+    <!-- Soft glow for rings -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- === HEX BACKGROUND === -->
+  <polygon points="200,10 390,120 390,342 200,452 10,342 10,120"
+           fill="url(#hexbg)" stroke="#52B788" stroke-width="5"/>
+  <polygon points="200,18 384,124 384,338 200,444 16,338 16,124"
+           fill="none" stroke="#95D5B2" stroke-width="1" opacity="0.5"/>
+
+  <g clip-path="url(#hexClip)">
+
+    <!-- === BACKGROUND ILLUSTRATIONS === -->
+
+    <!-- WATER: Gentle waves at bottom-left -->
+    <path d="M 10,300 Q 40,285 70,300 Q 100,315 130,300 Q 160,285 190,300 Q 220,315 250,300"
+          fill="none" stroke="#90E0EF" stroke-width="2" opacity="0.35"/>
+    <path d="M 10,315 Q 45,300 80,315 Q 115,330 150,315 Q 185,300 220,315 Q 255,330 290,315"
+          fill="none" stroke="#48CAE4" stroke-width="1.5" opacity="0.25"/>
+    <path d="M 15,328 Q 50,315 85,328 Q 120,341 155,328 Q 190,315 225,328"
+          fill="none" stroke="#ADE8F4" stroke-width="1.2" opacity="0.2"/>
+    <!-- Water drops -->
+    <ellipse cx="55" cy="270" rx="6" ry="8" fill="#48CAE4" opacity="0.12"/>
+    <ellipse cx="42" cy="255" rx="4" ry="5.5" fill="#00B4D8" opacity="0.1"/>
+
+    <!-- ENERGY: Sun rays at top-right -->
+    <circle cx="330" cy="140" r="22" fill="#FFB703" opacity="0.12"/>
+    <circle cx="330" cy="140" r="14" fill="#FB8500" opacity="0.1"/>
+    <!-- Sun rays -->
+    <line x1="330" y1="110" x2="330" y2="100" stroke="#FFB703" stroke-width="2" opacity="0.2"/>
+    <line x1="355" y1="118" x2="362" y2="110" stroke="#FFB703" stroke-width="2" opacity="0.2"/>
+    <line x1="360" y1="140" x2="370" y2="140" stroke="#FFB703" stroke-width="2" opacity="0.2"/>
+    <line x1="355" y1="162" x2="362" y2="170" stroke="#FFB703" stroke-width="2" opacity="0.2"/>
+    <line x1="330" y1="170" x2="330" y2="180" stroke="#FFB703" stroke-width="2" opacity="0.15"/>
+    <line x1="305" y1="162" x2="298" y2="170" stroke="#FFB703" stroke-width="2" opacity="0.15"/>
+    <line x1="300" y1="140" x2="290" y2="140" stroke="#FFB703" stroke-width="2" opacity="0.15"/>
+    <line x1="305" y1="118" x2="298" y2="110" stroke="#FFB703" stroke-width="2" opacity="0.15"/>
+    <!-- Lightning bolt (small) -->
+    <path d="M 350,175 L 345,190 L 352,188 L 347,205" fill="none"
+          stroke="#FB8500" stroke-width="1.5" opacity="0.18" stroke-linecap="round"/>
+
+    <!-- PULSES/GRAIN: Seed shapes at bottom-right -->
+    <!-- Mung bean seeds -->
+    <ellipse cx="310" cy="290" rx="7" ry="5" fill="#2D6A4F" opacity="0.15" transform="rotate(-20,310,290)"/>
+    <ellipse cx="328" cy="298" rx="6" ry="4.5" fill="#40916C" opacity="0.13" transform="rotate(10,328,298)"/>
+    <ellipse cx="318" cy="310" rx="7" ry="5" fill="#2D6A4F" opacity="0.12" transform="rotate(-35,318,310)"/>
+    <ellipse cx="340" cy="285" rx="5.5" ry="4" fill="#52B788" opacity="0.11" transform="rotate(25,340,285)"/>
+    <ellipse cx="298" cy="305" rx="6" ry="4.5" fill="#40916C" opacity="0.1" transform="rotate(-10,298,305)"/>
+    <!-- Small plant sprout -->
+    <path d="M 345,320 Q 345,305 340,295" fill="none" stroke="#52B788" stroke-width="1.5" opacity="0.2"/>
+    <ellipse cx="337" cy="293" rx="6" ry="4" fill="#95D5B2" opacity="0.15" transform="rotate(-40,337,293)"/>
+    <ellipse cx="349" cy="300" rx="5" ry="3.5" fill="#B7E4C7" opacity="0.12" transform="rotate(30,349,300)"/>
+
+    <!-- CARBON/LEAF: Leaves at top-left -->
+    <!-- Leaf 1 -->
+    <path d="M 60,140 Q 80,115 70,90" fill="none" stroke="#2D6A4F" stroke-width="1.5" opacity="0.2"/>
+    <path d="M 70,90 Q 55,110 60,140 Q 85,115 70,90 Z" fill="#52B788" opacity="0.1"/>
+    <line x1="70" y1="90" x2="62" y2="130" stroke="#2D6A4F" stroke-width="0.7" opacity="0.15"/>
+    <!-- Leaf 2 -->
+    <path d="M 45,165 Q 30,145 40,125" fill="none" stroke="#40916C" stroke-width="1.2" opacity="0.18"/>
+    <path d="M 40,125 Q 32,148 45,165 Q 52,142 40,125 Z" fill="#95D5B2" opacity="0.08"/>
+    <!-- CO2 text subtle -->
+    <text x="78" y="170" fill="#6C757D" font-size="10" font-family="Arial"
+          opacity="0.12" font-weight="bold">CO₂</text>
+    <!-- Small molecule dots -->
+    <circle cx="50" cy="185" r="3" fill="#6C757D" opacity="0.08"/>
+    <circle cx="58" cy="192" r="2" fill="#6C757D" opacity="0.06"/>
+    <circle cx="42" cy="190" r="2.5" fill="#6C757D" opacity="0.07"/>
+
+    <!-- NUTRIENT: Small N-P-K molecules at center-left background -->
+    <text x="30" y="240" fill="#7B2CBF" font-size="8" font-family="Arial"
+          opacity="0.1" font-weight="bold">N</text>
+    <text x="50" y="248" fill="#7B2CBF" font-size="7" font-family="Arial"
+          opacity="0.08" font-weight="bold">P</text>
+    <text x="38" y="260" fill="#7B2CBF" font-size="7.5" font-family="Arial"
+          opacity="0.09" font-weight="bold">K</text>
+
+  </g>
+
+  <!-- === 5 INTERLOCKING RINGS (center) === -->
+  <g filter="url(#softGlow)">
+    <!-- Arranged in pentagon around (200, 192), radius 50, ring radius 40 -->
+
+    <!-- Ring 1: WATER — top center -->
+    <circle cx="200" cy="142" r="40" fill="none" stroke="#0096C7"
+            stroke-width="5" opacity="0.85"/>
+
+    <!-- Ring 2: ENERGY — top right -->
+    <circle cx="247" cy="175" r="40" fill="none" stroke="#FB8500"
+            stroke-width="5" opacity="0.85"/>
+
+    <!-- Ring 3: FOOD — bottom right -->
+    <circle cx="230" cy="224" r="40" fill="none" stroke="#E63946"
+            stroke-width="5" opacity="0.85"/>
+
+    <!-- Ring 4: NUTRIENT — bottom left -->
+    <circle cx="170" cy="224" r="40" fill="none" stroke="#7B2CBF"
+            stroke-width="5" opacity="0.85"/>
+
+    <!-- Ring 5: CARBON — top left -->
+    <circle cx="153" cy="175" r="40" fill="none" stroke="#2D6A4F"
+            stroke-width="5" opacity="0.85"/>
+
+    <!-- Interlocking front arcs (weave effect) -->
+    <!-- Water over Energy+Carbon -->
+    <path d="M 200,102 A 40,40 0 0,1 236,134" fill="none"
+          stroke="#0096C7" stroke-width="6"/>
+    <!-- Energy over Food -->
+    <path d="M 283,168 A 40,40 0 0,1 266,210" fill="none"
+          stroke="#FB8500" stroke-width="6"/>
+    <!-- Food over Nutrient -->
+    <path d="M 238,260 A 40,40 0 0,1 196,254" fill="none"
+          stroke="#E63946" stroke-width="6"/>
+    <!-- Nutrient over Carbon -->
+    <path d="M 138,244 A 40,40 0 0,1 120,196" fill="none"
+          stroke="#7B2CBF" stroke-width="6"/>
+    <!-- Carbon over Water -->
+    <path d="M 144,138 A 40,40 0 0,1 172,120" fill="none"
+          stroke="#2D6A4F" stroke-width="6"/>
+  </g>
+
+  <!-- Ring labels -->
+  <text x="200" y="148" text-anchor="middle" fill="#0077B6"
+        font-size="18" font-weight="bold" font-family="Arial">W</text>
+  <text x="250" y="181" text-anchor="middle" fill="#E85D04"
+        font-size="18" font-weight="bold" font-family="Arial">E</text>
+  <text x="233" y="230" text-anchor="middle" fill="#C1121F"
+        font-size="18" font-weight="bold" font-family="Arial">F</text>
+  <text x="167" y="230" text-anchor="middle" fill="#6A0DAD"
+        font-size="18" font-weight="bold" font-family="Arial">N</text>
+  <text x="150" y="181" text-anchor="middle" fill="#1B4332"
+        font-size="18" font-weight="bold" font-family="Arial">C</text>
+
+  <!-- === PACKAGE NAME === -->
+  <text x="200" y="315" text-anchor="middle" fill="#1B4332"
+        font-size="42" font-weight="bold" font-family="Arial"
+        letter-spacing="2" filter="url(#shadow)">wefnexus</text>
+
+  <!-- Tagline -->
+  <text x="200" y="342" text-anchor="middle" fill="#40916C"
+        font-size="11" font-family="Arial" letter-spacing="1.8"
+        opacity="0.75">NEXUS ANALYSIS FOR AGRICULTURE</text>
+
+  <!-- Thin separator -->
+  <line x1="115" y1="352" x2="285" y2="352" stroke="#1B4332"
+        stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Dimension labels -->
+  <text x="200" y="370" text-anchor="middle" fill="#1B4332"
+        font-size="8.5" font-family="Arial" letter-spacing="0.8"
+        opacity="0.7">WATER  ·  ENERGY  ·  FOOD  ·  NUTRIENT  ·  CARBON</text>
+
+  <!-- Version -->
+  <text x="200" y="405" text-anchor="middle" fill="#1B4332"
+        font-size="10" font-family="Arial" font-weight="bold" opacity="0.6">v1.0.0</text>
+</svg>

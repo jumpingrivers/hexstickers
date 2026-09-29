@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 209" width="181" height="209">
+  <defs>
+    <clipPath id="hex-clip">
+      <polygon points="90.5,4 175,56.5 175,152.5 90.5,205 6,152.5 6,56.5"/>
+    </clipPath>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196C8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1576A8;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hex border (darker) -->
+  <polygon points="90.5,1 178,55 178,154 90.5,208 3,154 3,55"
+           fill="#0d5a8a" stroke="none"/>
+
+  <!-- Hex inner fill -->
+  <polygon points="90.5,7 172,58 172,151 90.5,202 9,151 9,58"
+           fill="url(#bg-gradient)" stroke="#0d5a8a" stroke-width="3"/>
+
+  <!-- Scatter plot dots (clipped to hex) -->
+  <g clip-path="url(#hex-clip)" opacity="0.55">
+    <!-- Cluster center-left -->
+    <circle cx="52" cy="118" r="3.5" fill="#0a3d6b"/>
+    <circle cx="60" cy="125" r="4" fill="#0a3d6b"/>
+    <circle cx="48" cy="130" r="3" fill="#0a3d6b"/>
+    <circle cx="65" cy="115" r="3.5" fill="#0a3d6b"/>
+    <circle cx="55" cy="135" r="4" fill="#0a3d6b"/>
+    <circle cx="42" cy="122" r="3" fill="#0a3d6b"/>
+    <circle cx="58" cy="108" r="3.5" fill="#0a3d6b"/>
+    <circle cx="70" cy="128" r="3" fill="#0a3d6b"/>
+
+    <!-- Cluster center -->
+    <circle cx="85" cy="120" r="4" fill="#0a3d6b"/>
+    <circle cx="92" cy="130" r="3.5" fill="#0a3d6b"/>
+    <circle cx="78" cy="128" r="3" fill="#0a3d6b"/>
+    <circle cx="95" cy="118" r="4" fill="#0a3d6b"/>
+    <circle cx="88" cy="138" r="3.5" fill="#0a3d6b"/>
+    <circle cx="100" cy="125" r="3" fill="#0a3d6b"/>
+    <circle cx="82" cy="112" r="3.5" fill="#0a3d6b"/>
+    <circle cx="90" cy="142" r="3" fill="#0a3d6b"/>
+    <circle cx="75" cy="135" r="4" fill="#0a3d6b"/>
+    <circle cx="98" cy="135" r="3.5" fill="#0a3d6b"/>
+
+    <!-- Cluster center-right -->
+    <circle cx="108" cy="122" r="3.5" fill="#0a3d6b"/>
+    <circle cx="115" cy="130" r="4" fill="#0a3d6b"/>
+    <circle cx="120" cy="118" r="3" fill="#0a3d6b"/>
+    <circle cx="112" cy="138" r="3.5" fill="#0a3d6b"/>
+    <circle cx="125" cy="128" r="3" fill="#0a3d6b"/>
+    <circle cx="105" cy="115" r="4" fill="#0a3d6b"/>
+    <circle cx="118" cy="140" r="3.5" fill="#0a3d6b"/>
+    <circle cx="130" cy="122" r="3" fill="#0a3d6b"/>
+
+    <!-- Scattered outliers -->
+    <circle cx="38" cy="108" r="3" fill="#0a3d6b"/>
+    <circle cx="140" cy="115" r="3" fill="#0a3d6b"/>
+    <circle cx="45" cy="145" r="3.5" fill="#0a3d6b"/>
+    <circle cx="135" cy="140" r="3" fill="#0a3d6b"/>
+    <circle cx="72" cy="100" r="3" fill="#0a3d6b"/>
+    <circle cx="110" cy="105" r="3" fill="#0a3d6b"/>
+    <circle cx="62" cy="148" r="3" fill="#0a3d6b"/>
+    <circle cx="128" cy="145" r="3" fill="#0a3d6b"/>
+    <circle cx="50" cy="100" r="2.5" fill="#0a3d6b"/>
+    <circle cx="100" cy="148" r="2.5" fill="#0a3d6b"/>
+    <circle cx="80" cy="150" r="3" fill="#0a3d6b"/>
+    <circle cx="68" cy="105" r="2.5" fill="#0a3d6b"/>
+    <circle cx="115" cy="110" r="2.5" fill="#0a3d6b"/>
+    <circle cx="55" cy="115" r="2.5" fill="#0a3d6b"/>
+    <circle cx="138" cy="130" r="2.5" fill="#0a3d6b"/>
+    <circle cx="35" cy="135" r="2.5" fill="#0a3d6b"/>
+
+    <!-- Extra density dots in center -->
+    <circle cx="85" cy="126" r="2.5" fill="#0a3d6b"/>
+    <circle cx="93" cy="122" r="2.5" fill="#0a3d6b"/>
+    <circle cx="78" cy="120" r="2.5" fill="#0a3d6b"/>
+    <circle cx="102" cy="130" r="2.5" fill="#0a3d6b"/>
+    <circle cx="88" cy="132" r="2.5" fill="#0a3d6b"/>
+    <circle cx="96" cy="140" r="2.5" fill="#0a3d6b"/>
+    <circle cx="72" cy="132" r="2.5" fill="#0a3d6b"/>
+    <circle cx="108" cy="132" r="2.5" fill="#0a3d6b"/>
+
+    <!-- Upper sparse dots -->
+    <circle cx="60" cy="95" r="2.5" fill="#0a3d6b"/>
+    <circle cx="100" cy="95" r="2.5" fill="#0a3d6b"/>
+    <circle cx="130" cy="108" r="2.5" fill="#0a3d6b"/>
+    <circle cx="42" cy="112" r="2.5" fill="#0a3d6b"/>
+    <circle cx="90" cy="100" r="2.5" fill="#0a3d6b"/>
+
+    <!-- Lower sparse dots -->
+    <circle cx="70" cy="155" r="2.5" fill="#0a3d6b"/>
+    <circle cx="110" cy="150" r="2.5" fill="#0a3d6b"/>
+    <circle cx="90" cy="155" r="2.5" fill="#0a3d6b"/>
+    <circle cx="55" cy="150" r="2.5" fill="#0a3d6b"/>
+    <circle cx="125" cy="150" r="2.5" fill="#0a3d6b"/>
+  </g>
+
+  <!-- Package name (smaller) -->
+  <text x="90.5" y="78" text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="bold" font-size="40" fill="white"
+        letter-spacing="1">badp</text>
+
+  <!-- Subtitle: "Bayesian Averaging" along bottom-left edge -->
+  <text text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="400" font-size="9" fill="rgba(255,255,255,0.9)"
+        letter-spacing="0.3"
+        transform="rotate(32, 52, 172)"
+        x="52" y="172">Bayesian Averaging</text>
+
+  <!-- Subtitle: "for Dynamic Panels" along bottom-right edge -->
+  <text text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="400" font-size="9" fill="rgba(255,255,255,0.9)"
+        letter-spacing="0.3"
+        transform="rotate(-32, 129, 172)"
+        x="129" y="172">for Dynamic Panels</text>
+</svg>

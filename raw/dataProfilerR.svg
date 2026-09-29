@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.2 200" width="173.2" height="200" role="img" aria-label="dataProfilerR">
+  <defs>
+    <style>
+      .hexfill { fill: #ffffff; }
+      .hexborder { fill: none; stroke: #2c7fb8; stroke-width: 6; }
+      .bar { fill: #2c7fb8; }
+      .baseline { stroke: #b8c4cc; stroke-width: 2; }
+      .curve { fill: none; stroke: #d95f02; stroke-width: 4; stroke-linecap: round; }
+      .title { fill: #2c7fb8; font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- hexagon -->
+  <polygon class="hexfill" points="86.6,4 168.2,52 168.2,148 86.6,196 5,148 5,52"/>
+  <polygon class="hexborder" points="86.6,4 168.2,52 168.2,148 86.6,196 5,148 5,52"/>
+
+  <!-- distribution histogram -->
+  <g>
+    <rect class="bar" x="40"  y="97" width="13" height="28" rx="1.5"/>
+    <rect class="bar" x="56"  y="73" width="13" height="52" rx="1.5"/>
+    <rect class="bar" x="72"  y="53" width="13" height="72" rx="1.5"/>
+    <rect class="bar" x="88"  y="53" width="13" height="72" rx="1.5"/>
+    <rect class="bar" x="104" y="73" width="13" height="52" rx="1.5"/>
+    <rect class="bar" x="120" y="97" width="13" height="28" rx="1.5"/>
+  </g>
+
+  <!-- baseline -->
+  <line class="baseline" x1="36" y1="125" x2="137" y2="125"/>
+
+  <!-- density curve over the bars -->
+  <path class="curve" d="M40 113 C 62 110, 70 55, 86.6 49 C 103 55, 111 110, 133 113"/>
+
+  <!-- title -->
+  <text class="title" x="86.6" y="160" font-size="20" text-anchor="middle">dataProfiler<tspan fill="#d95f02">R</tspan></text>
+</svg>

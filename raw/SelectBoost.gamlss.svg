@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1155" width="1000" height="1155">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: 'Inter','DejaVu Sans',Arial,sans-serif; font-weight: 800; }
+      .mono  { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',monospace; font-weight: 600; }
+    ]]></style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <g filter="url(#shadow)">
+    <polygon points="500,10 980,287 980,868 500,1145 20,868 20,287" fill="#0F172A"/>
+    <polygon points="500,10 980,287 980,868 500,1145 20,868 20,287" fill="none" stroke="#1f2a44" stroke-width="12"/>
+  </g>
+
+  <g transform="translate(0,0)">
+    <path d="M 160 240 L 840 240" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 300 L 840 300" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 360 L 840 360" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 420 L 840 420" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 480 L 840 480" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 540 L 840 540" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 600 L 840 600" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M 160 660 L 840 660" stroke="#0EE8FF" stroke-opacity="0.08" stroke-width="6"/>
+    <g transform="translate(120,230)">
+      <path d="M 0.0 455.1 Q 47.5 446.5 95.0 437.9 Q 142.5 418.0 190.0 398.1 Q 237.5 364.9 285.0 331.7 Q 332.5 295.8 380.0 259.9 Q 427.5 224.5 475.0 189.2 Q 522.5 170.1 570.0 151.0 Q 617.5 131.0 665.0 111.1 Q 712.5 107.0 760.0 103.0" fill="none" stroke="#7EE9FF" stroke-opacity="0.50" stroke-width="12"/>
+<path d="M 0.0 447.4 Q 47.5 437.7 95.0 428.0 Q 142.5 409.8 190.0 391.7 Q 237.5 363.2 285.0 334.7 Q 332.5 305.5 380.0 276.3 Q 427.5 242.0 475.0 207.7 Q 522.5 179.5 570.0 151.3 Q 617.5 135.3 665.0 119.2 Q 712.5 109.4 760.0 99.5" fill="none" stroke="#7EE9FF" stroke-opacity="0.55" stroke-width="10"/>
+<path d="M 0.0 457.3 Q 47.5 452.1 95.0 446.9 Q 142.5 437.6 190.0 428.3 Q 237.5 404.8 285.0 381.3 Q 332.5 353.0 380.0 324.8 Q 427.5 276.3 475.0 227.7 Q 522.5 192.8 570.0 157.8 Q 617.5 137.3 665.0 116.8 Q 712.5 106.4 760.0 96.0" fill="none" stroke="#7EE9FF" stroke-opacity="0.60" stroke-width="8"/>
+<path d="M 0.0 460.1 Q 47.5 457.2 95.0 454.3 Q 142.5 444.8 190.0 435.2 Q 237.5 412.3 285.0 389.4 Q 332.5 354.1 380.0 318.9 Q 427.5 274.7 475.0 230.6 Q 522.5 186.8 570.0 143.0 Q 617.5 108.7 665.0 74.3 Q 712.5 72.7 760.0 71.1" fill="none" stroke="#7EE9FF" stroke-opacity="0.65" stroke-width="6"/>
+
+    </g>
+  </g>
+
+  <text x="500" y="520" text-anchor="middle" class="title" font-size="118" fill="#E6F7FF" letter-spacing="1">SelectBoost</text>
+  <text x="500" y="650" text-anchor="middle" class="mono" font-size="50" fill="#98E6FF" opacity="0.95">gamlss</text>
+</svg>

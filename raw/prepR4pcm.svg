@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 577" width="500" height="577">
+  <!-- prepR4pcm logo — tree tips aligned 1:1 with data-matrix rows -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#347a66"/>
+      <stop offset="100%" stop-color="#1e4a3c"/>
+    </linearGradient>
+    <clipPath id="matrixClip">
+      <rect x="280" y="142" width="160" height="244" rx="8" ry="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Hex shell -->
+  <polygon points="250,14 488,150 488,428 250,564 12,428 12,150"
+           fill="url(#bg)" stroke="#f0c75e" stroke-width="8"
+           stroke-linejoin="round"/>
+  <polygon points="250,30 474,158 474,420 250,548 26,420 26,158"
+           fill="none" stroke="#f0c75e" stroke-width="2" opacity="0.3"
+           stroke-linejoin="round"/>
+
+  <!-- Matrix fills (clipped to the rounded rect): dark header bar + grey label column -->
+  <g clip-path="url(#matrixClip)">
+    <rect x="280" y="142" width="160" height="34"  fill="#1a4034"/>
+    <rect x="280" y="176" width="34"  height="210" fill="#ffffff" opacity="0.15"/>
+  </g>
+
+  <!-- Connecting dashed lines: every tip maps to exactly one matrix row -->
+  <g stroke="#f0c75e" stroke-width="2" stroke-dasharray="5,4" fill="none" opacity="0.7">
+    <path d="M 210,197 H 280"/>
+    <path d="M 210,239 H 280"/>
+    <path d="M 210,281 H 280"/>
+    <path d="M 210,323 H 280"/>
+    <path d="M 210,365 H 280"/>
+  </g>
+
+  <!-- Phylogenetic tree: topology ((t1,(t2,t3)),(t4,t5)) — solo tip then nested cherry -->
+  <g stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 46,286.25 H 78"/>
+    <path d="M 78,228.5 V 344"/>
+    <path d="M 78,228.5 H 114"/>
+    <path d="M 114,197 V 260"/>
+    <path d="M 114,197 H 198"/>
+    <path d="M 114,260 H 158"/>
+    <path d="M 158,239 V 281"/>
+    <path d="M 158,239 H 198"/>
+    <path d="M 158,281 H 198"/>
+    <path d="M 78,344 H 158"/>
+    <path d="M 158,323 V 365"/>
+    <path d="M 158,323 H 198"/>
+    <path d="M 158,365 H 198"/>
+  </g>
+
+  <!-- Tip dots -->
+  <g fill="#f0c75e">
+    <circle cx="198" cy="197" r="7"/>
+    <circle cx="198" cy="239" r="7"/>
+    <circle cx="198" cy="281" r="7"/>
+    <circle cx="198" cy="323" r="7"/>
+    <circle cx="198" cy="365" r="7"/>
+  </g>
+
+  <!-- Matrix grid (white strokes drawn on top of the fills) -->
+  <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <rect x="280" y="142" width="160" height="244" rx="8" ry="8"/>
+    <line x1="280" y1="176" x2="440" y2="176"/>
+    <line x1="280" y1="218" x2="440" y2="218"/>
+    <line x1="280" y1="260" x2="440" y2="260"/>
+    <line x1="280" y1="302" x2="440" y2="302"/>
+    <line x1="280" y1="344" x2="440" y2="344"/>
+    <line x1="314" y1="176" x2="314" y2="386"/>
+    <line x1="356" y1="176" x2="356" y2="386"/>
+    <line x1="398" y1="176" x2="398" y2="386"/>
+  </g>
+
+  <!-- Header cells -->
+  <g fill="#ffffff" opacity="0.3">
+    <rect x="322" y="152" width="27" height="14" rx="3"/>
+    <rect x="364" y="152" width="27" height="14" rx="3"/>
+    <rect x="406" y="152" width="27" height="14" rx="3"/>
+  </g>
+
+  <!-- Row dots in the label column — one per row, aligned with the tree tips -->
+  <g fill="#f0c75e">
+    <circle cx="297" cy="197" r="5"/>
+    <circle cx="297" cy="239" r="5"/>
+    <circle cx="297" cy="281" r="5"/>
+    <circle cx="297" cy="323" r="5"/>
+    <circle cx="297" cy="365" r="5"/>
+  </g>
+
+  <!-- Package name — x=256: geometric centre is 250; +6 optical nudge to
+       balance under the matrix, which is the denser half of the artwork -->
+  <text x="256" y="452" text-anchor="middle" fill="#ffffff"
+        font-family="'Fira Sans','Helvetica Neue',Arial,sans-serif"
+        font-size="46" font-weight="700" letter-spacing="1">
+    prepR4pcm
+  </text>
+</svg>

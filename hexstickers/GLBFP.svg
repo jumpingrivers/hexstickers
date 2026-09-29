@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GLBFP package logo</title>
+  <desc id="desc">Hexagonal logo with sparse grid cells, density curve and GLBFP text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="420" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="0.55" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="curve" x1="120" y1="300" x2="390" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#111827" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <path filter="url(#shadow)" d="M256 28 456 142v228L256 484 56 370V142Z" fill="url(#bg)"/>
+  <path d="M256 48 438 152v208L256 464 74 360V152Z" fill="none" stroke="#e5e7eb" stroke-width="10" opacity="0.95"/>
+
+  <g opacity="0.34" stroke="#e5e7eb" stroke-width="2">
+    <path d="M122 164H390"/>
+    <path d="M104 210H408"/>
+    <path d="M96 256H416"/>
+    <path d="M104 302H408"/>
+    <path d="M122 348H390"/>
+    <path d="M150 132V384"/>
+    <path d="M204 102V414"/>
+    <path d="M256 86V430"/>
+    <path d="M312 102V414"/>
+    <path d="M366 132V384"/>
+  </g>
+
+  <g>
+    <rect x="150" y="210" width="54" height="46" rx="6" fill="#ecfeff" opacity="0.92"/>
+    <rect x="204" y="164" width="56" height="92" rx="6" fill="#a7f3d0" opacity="0.92"/>
+    <rect x="260" y="118" width="56" height="138" rx="6" fill="#fde68a" opacity="0.95"/>
+    <rect x="316" y="176" width="50" height="80" rx="6" fill="#fb923c" opacity="0.94"/>
+    <rect x="366" y="224" width="34" height="32" rx="6" fill="#fef3c7" opacity="0.9"/>
+  </g>
+
+  <path d="M116 302C150 292 168 252 200 236C238 218 244 152 286 152C330 152 330 236 370 248C394 256 406 238 424 230"
+        fill="none" stroke="url(#curve)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M116 302C150 292 168 252 200 236C238 218 244 152 286 152C330 152 330 236 370 248C394 256 406 238 424 230"
+        fill="none" stroke="#fff7ed" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <g fill="#f8fafc">
+    <circle cx="150" cy="302" r="8"/>
+    <circle cx="204" cy="236" r="8"/>
+    <circle cx="260" cy="164" r="8"/>
+    <circle cx="316" cy="190" r="8"/>
+    <circle cx="370" cy="248" r="8"/>
+  </g>
+
+  <path d="M150 302 204 236 260 164 316 190 370 248" fill="none" stroke="#f8fafc" stroke-width="4" stroke-dasharray="10 10" opacity="0.9"/>
+
+  <text x="256" y="392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="72" font-weight="700" fill="#f8fafc" letter-spacing="2">GLBFP</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg width="680" height="740" viewBox="0 0 680 740" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>FitVerse hex logo</title>
+<desc>Hexagonal sticker logo for the FitVerse R package with a histogram and overlaid density curve.</desc>
+
+<defs>
+  <clipPath id="hexclip">
+    <polygon points="340,80 580,215 580,545 340,680 100,545 100,215"/>
+  </clipPath>
+</defs>
+
+<polygon points="340,80 580,215 580,545 340,680 100,545 100,215"
+         fill="#1F1033" stroke="#5A2D82" stroke-width="10" stroke-linejoin="round"/>
+
+<g clip-path="url(#hexclip)">
+
+  <!-- Grid lines horizontal (baseline shifted up 50px to y=412) -->
+  <line x1="100" y1="412" x2="580" y2="412" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="100" y1="352" x2="580" y2="352" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="100" y1="292" x2="580" y2="292" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="100" y1="232" x2="580" y2="232" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="100" y1="172" x2="580" y2="172" stroke="#3A1F5A" stroke-width="1"/>
+
+  <!-- Grid lines vertical -->
+  <line x1="182" y1="100" x2="182" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="229" y1="100" x2="229" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="276" y1="100" x2="276" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="323" y1="100" x2="323" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="370" y1="100" x2="370" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="417" y1="100" x2="417" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="464" y1="100" x2="464" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+  <line x1="511" y1="100" x2="511" y2="510" stroke="#3A1F5A" stroke-width="1"/>
+
+  <!-- Histogram bars — cyan/teal (baseline y=412) -->
+  <rect x="136" y="354" width="42" height="58"  fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="183" y="294" width="42" height="118" fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="230" y="247" width="42" height="165" fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="277" y="224" width="42" height="188" fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="324" y="250" width="42" height="162" fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="371" y="294" width="42" height="118" fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="418" y="332" width="42" height="80"  fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="465" y="364" width="42" height="48"  fill="#00BCD4" fill-opacity="0.75"/>
+  <rect x="512" y="384" width="42" height="28"  fill="#00BCD4" fill-opacity="0.75"/>
+
+  <!-- Baseline -->
+  <line x1="120" y1="412" x2="568" y2="412" stroke="#7A4A9A" stroke-width="1.5"/>
+
+  <!-- Density curve — yellow -->
+  <path d="M120,412 C135,412 148,395 162,370
+           C180,338 200,280 232,252
+           C255,230 272,216 298,214
+           C328,212 352,234 380,264
+           C408,293 428,324 454,346
+           C476,364 502,382 530,396
+           C550,405 564,410 578,412"
+        fill="none" stroke="#F7D94C" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Text -->
+  <text x="340" y="474" text-anchor="middle"
+        font-family="Georgia, serif" font-size="62" font-weight="700"
+        fill="#FFFFFF" letter-spacing="1">FitVerse</text>
+
+  <text x="340" y="512" text-anchor="middle"
+        font-family="Georgia, serif" font-size="21" font-weight="400"
+        fill="#C09AE0" letter-spacing="3">distribution fitting</text>
+
+</g>
+
+<!-- Hex border -->
+<polygon points="340,80 580,215 580,545 340,680 100,545 100,215"
+         fill="none" stroke="#9B59C8" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="340,87 573,220 573,540 340,673 107,540 107,220"
+         fill="none" stroke="#1F1033" stroke-width="3" stroke-linejoin="round"/>
+
+</svg>

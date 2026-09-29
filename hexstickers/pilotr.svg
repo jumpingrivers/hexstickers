@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 346" width="300" height="346">
+  <defs>
+    <linearGradient id="hexbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f82c4"/>
+      <stop offset="1" stop-color="#1f4f7e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hexagon (pointy-top) -->
+  <polygon points="150,12 288,93 288,253 150,334 12,253 12,93"
+           fill="url(#hexbg)" stroke="#14375a" stroke-width="11" stroke-linejoin="round"/>
+  <polygon points="150,12 288,93 288,253 150,334 12,253 12,93"
+           fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- power-curve plot, centred in the upper hex -->
+  <g stroke-linecap="round">
+    <!-- axes -->
+    <line x1="74" y1="78" x2="74" y2="196" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3"/>
+    <line x1="74" y1="196" x2="226" y2="196" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3"/>
+    <!-- 80% target bar -->
+    <line x1="74" y1="100" x2="226" y2="100" stroke="#ffd98a" stroke-width="4.5" stroke-dasharray="9 8"/>
+    <!-- rising power curve -->
+    <path d="M 80 188 C 120 186 138 170 158 134 C 176 102 198 90 220 86"
+          fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+    <!-- marker where the curve reaches the 80% target -->
+    <circle cx="176" cy="100" r="8" fill="#ffd98a" stroke="#1f4f7e" stroke-width="2.5"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="150" y="255" text-anchor="middle" font-family="DejaVu Sans, Verdana, Arial, sans-serif"
+        font-size="50" font-weight="700" fill="#ffffff" letter-spacing="1.5">pilotr</text>
+</svg>
